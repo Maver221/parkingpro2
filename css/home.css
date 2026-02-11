@@ -1,0 +1,110 @@
+/* ===============================
+   LAYOUT
+=================================*/
+.slot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 18px;
+}
+
+/* ===============================
+   BASE SLOT
+=================================*/
+.slot-box {
+    height: 75px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+}
+
+/* ===============================
+   NORMAL SLOT
+=================================*/
+.slot-normal {
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: #cbd5e1;
+}
+
+/* ===============================
+   VIP GOLD STYLE
+=================================*/
+.slot-vip {
+    background: linear-gradient(145deg, #f6d365, #fda085);
+    border: 2px solid #facc15;
+    color: #5b3b00;
+    box-shadow: 0 10px 25px rgba(250, 204, 21, .4);
+}
+
+/* ===============================
+   BOOKED STYLE
+=================================*/
+.slot-booked {
+    background: #3b0d0d;
+    border: 2px solid #ef4444;
+    color: #fecaca;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.slot-booked::after {
+    content: "เต็ม";
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 11px;
+    background: #ef4444;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+
+/* ===============================
+   HOVER EFFECT
+=================================*/
+.slot-box:not(.slot-booked):hover {
+    transform: translateY(-6px) scale(1.05);
+}
+
+/* ===============================
+   SELECTED SLOT
+=================================*/
+.slot-selected {
+    outline: 3px solid #2563eb;
+    transform: scale(1.08);
+}
+
+/* ===============================
+   TEXT
+=================================*/
+.slot-emoji {
+    font-size: 24px;
+}
+
+.slot-name {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ===============================
+   CARD CONTAINER (กรอบรอบ grid)
+=================================*/
+.card-custom {
+    background: #0f172a;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #1e293b;
+}
+
+.slot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 120px));
+    justify-content: start;
+    gap: 18px;
+}

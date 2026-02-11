@@ -1,0 +1,52 @@
+/* ===== NAVBAR HEADER (SOLID) ===== */
+.main-navbar {
+    background-color: #0f172a !important;   /* สีทึบ ไม่ใส */
+    backdrop-filter: none !important;       /* ตัด blur */
+    box-shadow: 0 2px 12px rgba(0,0,0,.4);
+    border-bottom: 1px solid #1f2937;
+    height: 56px;
+    z-index: 1100;
+}
+
+/* Spacer กัน content ชน */
+.navbar-spacer {
+    height: 56px;
+}
+
+/* Brand */
+.main-navbar .navbar-brand {
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Link */
+.main-navbar .nav-link {
+    color: #cbd5f5 !important;
+    font-size: 14.5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all .2s ease;
+}
+
+.main-navbar .nav-link:hover {
+    background: #1f2937;
+    color: #fff !important;
+}
+
+/* Admin link */
+.main-navbar .admin-link {
+    color: #facc15 !important;
+    font-weight: 600;
+}
+
+/* Logout button */
+.main-navbar .btn-logout {
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    background: transparent;
+}
+
+.main-navbar .btn-logout:hover {
+    background: #ef4444;
+    color: #fff;
+}
